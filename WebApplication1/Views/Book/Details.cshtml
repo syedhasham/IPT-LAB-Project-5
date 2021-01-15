@@ -1,0 +1,66 @@
+﻿@model WebApplication1.Models.tbl_books
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tbl_books</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.book_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.book_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.book_author)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.book_author)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.book_edition)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.book_edition)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.book_price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.book_price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.book_qunatity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.book_qunatity)
+        </dd>
+         <dt>
+            @Html.DisplayNameFor(model => model.tbl_user.user_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbl_user.user_name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.book_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
